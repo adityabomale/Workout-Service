@@ -1,9 +1,6 @@
 FROM node:lts-alpine
-WORKDIR /home/app
-COPY SS-assignment .
-RUN apt-get update && apt-get install -y
-RUN npm install npm@latest -g && \
-    npm install n -g && \
-    n latest
-CMD ["node", "SS-assignment/index.js"]
-EXPOSE 3001
+WORKDIR /apps
+COPY ./SS-assignment .
+CMD ["cd", "SS-assignment"]
+RUN npm install
+CMD ["node", "index.js"]

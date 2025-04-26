@@ -7,17 +7,7 @@ module.exports = router;
 //Post Method
 router.post('/createPlan', async (req, res) => {
     
-    /*try {
-        const response = await fetch('http://localhost:3000/api/user/me');
-        const data = await response.json();
-        const { name } = res.json(data);
-        } 
-    catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'Failed to fetch data' });
-        }
-   
-*/      const data = new Model({
+     const data = new Model({
         userid: req.body.userid,
         //name: req.body.name,
         plan: req.body.plan,
