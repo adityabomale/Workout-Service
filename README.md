@@ -11,8 +11,7 @@ PORTS - 3001 - api endpoints
 --------------------------------------------------------
 Using Docker compose file-
 1. Clone github repository into local machine
-2. Run - cd Microservice-Deployment
-3. Run - docker compose up
+2. Run - docker compose up -d
    
 --------------------------------------------------------
 Using Docker for individual container deployment-
